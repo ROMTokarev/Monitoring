@@ -1,5 +1,3 @@
-// MA.cpp: определ€ет точку входа дл€ консольного приложени€.
-//
 
 #include "stdafx.h"
 #include <string>
@@ -101,7 +99,6 @@ bool get_Website(string url){
 
 	send(Socket, get_http.c_str(), strlen(get_http.c_str()), 0);
 
-	// ∆дЄм 10 секунд ответ от сервера.
 	int iPendingBytes = 0, count;
 	for (count = 0; count < 100 && iPendingBytes == 0; count++)
 	{
